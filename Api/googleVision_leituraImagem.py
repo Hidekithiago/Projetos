@@ -51,6 +51,8 @@ def convertPDF():
         break   
         
 if __name__ == "__main__":
+    #Para Windows Instalar o Poopler pelo site https://github.com/oschwartz10612/poppler-windows/releases
+    #Alterar a linha 43 para o diretorio onde instalou o poopler
     diretorioPasta = f"C:\diretorio\pasta"
     nomeArquivo = f'nomeArquivo'
     extensaoArquivo = '.pdf'
