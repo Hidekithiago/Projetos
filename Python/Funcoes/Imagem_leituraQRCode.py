@@ -13,4 +13,4 @@ def ler_qrcode(imagem):
         print("Nenhum QR Code encontrado na imagem.")
 
 # Chame a função com o caminho da imagem contendo o QR Code
-ler_qrcode(r"C:\Users\Hideki\Downloads\frame (3).png")
+ler_qrcode(r"frame (3).png")

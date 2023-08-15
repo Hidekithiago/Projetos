@@ -10,7 +10,7 @@ from mysql.connector import errorcode
 
 
 def limpaArquivos():#################### Exclui os arquivos com mais de 90 dias ####################        
-    path = "/home/quaestum/atestados_storage/temp"
+    path = "path"
     files = os.listdir(path)    
 
     for filename in files:            
@@ -33,7 +33,7 @@ def limpaArquivos():#################### Exclui os arquivos com mais de 90 dias 
         except OSError: 
             print("Path '%s' does not exists or is inaccessible" %fullPatch) 
             sys.exit()
-    print("Limpou a pasta /home/quaestum/atestados_storage/temp")
+    
     
 if __name__ == "__main__":
     try: 
