@@ -1,0 +1,15 @@
+import requests
+
+def RequisicaoPostApi(idCartorio):
+  params = {    
+	  "id_cartorio":idCartorio
+  }  
+  api_result = requests.post('', json = params)  
+  api_response = api_result.json()  
+  return api_response['mensagem'], api_response['mensagemPendencias']
+
+def RequisicaoGetApi(idCartorio):
+  api_result = requests.get('URL', params)
+  api_response = api_result.json()
+  for flight in api_response['data']:
+      print(flight)
